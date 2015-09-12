@@ -1,0 +1,28 @@
+Name: play2-dist
+Cartridge-Short-Name: PLAY2
+Display-Name: Play Framework Distribution
+Description: "The High Velocity Web Framework For Java and Scala"
+Version: '2.4.2'
+License: "Apache License Version 2.0"
+Vendor: "playframework.com"
+Cartridge-Version: '0.0.1'
+Cartridge-Vendor: nguquen
+Categories:
+  - service
+  - web_framework
+  - java
+  - scala
+Provides:
+  - play2
+Scaling:
+  Min: 1
+  Max: -1
+Endpoints:
+  - Private-IP-Name:   IP
+    Private-Port-Name: PORT
+    Private-Port:      8080
+    Public-Port-Name:  PROXY_PORT
+    Mappings:
+      - Frontend:      ""
+        Backend:       ""
+        Options:       { websocket: true }
