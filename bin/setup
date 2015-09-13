@@ -6,8 +6,8 @@ case "$1" in
 esac
 
 # create logs dir
-if [ ! -d "${OPENSHIFT_PLAY2_DIR}/logs" ]; then
-    mkdir -p ${OPENSHIFT_PLAY2_DIR}/logs
+if [ ! -d "${OPENSHIFT_PLAY2_DIR}/usr/logs" ]; then
+    mkdir -p ${OPENSHIFT_PLAY2_DIR}/usr/logs
 fi
 
 # set env variables
