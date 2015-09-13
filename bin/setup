@@ -1,15 +1,5 @@
 #!/bin/bash -e
 
-case "$1" in
-  -v|--version)
-    version="$2"
-esac
-
-# create logs dir
-if [ ! -d "${OPENSHIFT_PLAY2_DIR}/usr/logs" ]; then
-    mkdir -p ${OPENSHIFT_PLAY2_DIR}/usr/logs
-fi
-
 # set env variables
 export JAVA_HOME="/etc/alternatives/java_sdk_1.8.0"
 export PATH="$JAVA_HOME/bin:$PATH"
